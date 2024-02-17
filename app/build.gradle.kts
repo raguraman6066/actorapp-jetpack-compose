@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("com.google.devtools.ksp").version("1.6.10-1.0.4")
+
 }
 
 android {
@@ -69,17 +70,18 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     //retrofit
+
+
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-moshi:2.9.0")
     implementation("com.squareup.moshi:moshi:1.15.0")
 
+
     //for annotation kapt ksp
-
     ksp("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
-
     kapt("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     implementation ("com.github.bumptech.glide:compose:1.0.0-beta01")
 

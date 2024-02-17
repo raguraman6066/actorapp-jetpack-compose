@@ -9,7 +9,7 @@ object RetrofitInstance {
     }
 
     fun provideRetrofit():Retrofit.Builder{
-        return Retrofit.Builder().baseUrl("https://hp-api.onrender.com/")
+        return Retrofit.Builder().baseUrl("https://hp-api.onrender.com/api/")
             .addConverterFactory(MoshiConverterFactory.create())
     }
 }

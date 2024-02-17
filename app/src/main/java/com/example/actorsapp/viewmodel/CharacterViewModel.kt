@@ -15,6 +15,7 @@ class CharacterViewModel(val characterRepo:CharacterRepo) :ViewModel(){
     init {
         viewModelScope.launch {
             val character=characterRepo.getCharacters()
+            _state.value=character
         }
     }
 
